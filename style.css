@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Clearfix Hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/* Layout */
+
+header {
+    border: 1px solid #66768a;
+}
+
+header {
+    height: 75px;
+}
+
+.top {
+    height: 300px;
+}
+
+.midOne {
+    height: 250px;
+}
+
+.midTwo {
+    height: 400px;
+}
+
+.bottom {
+    height: 260px;
+}
+
+footer {
+    height: 200px;
+}
+
+.midTwoLeft , .midTwoRight {
+    width: 50%;
+    float: left;
+    height: 400px;
+}
+
+.footLeft, .footRight {
+    width: 50%;
+    float: left;
+    height: 150px;
+}
+
+.footBottom {
+    clear: both;
+}
+
+/* Styling */
+
+/* Header */
+
+header {
+    background: #66768a;
+}
+
+header>section {
+    width: 33.33%;
+    float: left;
+}
+
+.headCenter {
+    text-align: center;
+}
+
+.logoTop {
+    height: 73px;
+}
+
+.topNav li {
+    float: left;
+    list-style: none;
+    width: 25%;
+    margin-top: 6%;
+}
+
+.topNav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.headRight {
+    text-align: right;
+}
+
+header button {
+    color: #66768a;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 2% 2%;
+    margin: 4% 10% 1% 1%;
+}
+
+/* Top Section Styling */
+
+.top {
+    text-align: center;
+    color: white;
+    background: #66768a; 
+}
+
+.top h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding: 0 30%;
+}
+
+.top p {
+    font-size: 1.5rem;
+    padding: 0 25%;
+}
+
+.top a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MidOne Styling */
+
+.midOne {
+    text-align: center;
+    padding: 2% 40%;
+}
+
+.midOne h2 {
+    font-size: 3rem;
+}
+
+.midOne p {
+    font-size: 1.25rem;
+}
+
+/* Mid Two Styling */
+
+.midTwoLeft, .midTwoRight {
+    text-align: center;
+    background: #dbdfe2;
+    padding: 2% 10%;
+}
+
+.midTwo h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.midTwo p {
+    font-size: 1.5rem;
+}
+
+.midTwo button {
+    background: #dbdfe2;
+    padding: 1%;
+}
+
+/* Bottom Section Styling */
+
+.bottom {
+    text-align: center;
+    padding: 2% 30%;
+}
+
+.bottom h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.bottom p {
+    font-size: 1.25rem;
+    padding: 0 5%;
+}
+
+.bottom button {
+    padding: 2% 4%;
+    text-transform: uppercase;
+    color: #161f2a;
+    background: white;
+}
+
+/* Footer Styling */
+
+footer {
+    background: #161f2a;
+    color: white;
+}
+
+.below {
+        clear: both;
+        display: block;
+        margin: 5% 1% 1% 8%;
+        text-decoration: underline;
+}
+
+footer li {
+    float: left; 
+    width: 10%;
+    list-style: none;   
+}
+
+footer li>a {
+    color: white;
+    text-decoration: none;
+}
+
+.footRight {
+    text-align: right;
+    font-size: 1.25rem;
+    padding: 0 3%;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 1025px) {
+    .bottom h3 {
+        font-size: 2rem;
+    }
+
+    .footBottom img {
+        display: none;
+    }
+}
+
+@media (min-width: 427px) and (max-width: 769px) {
+    .top h1 {
+        font-size: 3.5rem;
+    }
+
+    .midOne {
+        padding: 2% 29%;
+    }
+
+    .greyBox {
+        height: 140px;
+    }
+}
+
+@media all and (max-width: 426px) {
+    .topNav li {
+        float: none;
+        width: 100%;
+    }
+    
+    .top h1 {
+        font-size: 3.5rem;
+        padding: 0 10%;
+    }
+
+    .midOne {
+        padding: 2% 19%;
+    }
+
+    .top p {
+        font-size: 1.25rem;
+        padding: 0 14%;
+    }
+    
+    .greyBox {
+        height: 80px;
+    }
+
+    .bottom {
+        padding: 2% 10%;
+    }
+
+    .footLeft, .footBottom {
+        display: none;
+    }
+
+    .footRight {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 322px) {
+    .greyBox {
+        height: 40px;
+    }
+    .midTwoLeft, .midTwoRight {
+        padding: 2% 5%;
+    }
+    .midTwoLeft, .midTwoRight {
+        height: 350px;
+    }
+}
